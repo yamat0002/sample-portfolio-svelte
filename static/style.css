@@ -72,15 +72,7 @@ img {
     gap: 1em;
 }
 
-.projects article {
-    display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 3;
-}
 
-.projects article h2 {
-    margin: 0;
-}
 
 h1 {
     font-size: 400%;
