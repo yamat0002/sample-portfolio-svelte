@@ -2,63 +2,63 @@
   {
     "title": "Persuasive or Deceptive Visualization?",
     "year": 2026,
-    "image": "images/persuasive-design.jpg",
+    "image": "/images/persuasive-design.jpg",
     "description": "An exploration of how the same NYPD misconduct complaint dataset can be visualized to tell two opposing stories — one arguing systemic racial bias, the other arguing procedural fairness — through strategic design choices.",
     "story": "This project forced me to sit with an uncomfortable truth: data doesn't speak for itself. Using the CCRB Complaint Database made public by ProPublica, I built two dashboards from the exact same dataset — one arguing that Black civilians face systemic disadvantage at every stage of the NYPD misconduct complaint process, and another arguing the system treats everyone consistently. Dark backgrounds with red accents, stacked bars, and declarative titles made disparities feel urgent. Clinical blues, grouped bars, and irrelevant metrics like investigation duration made the same gaps disappear. The most deceptive choices weren't fabrications — they were technically defensible decisions that compounded into radically different impressions. It filled me with rage knowing this is exactly how propaganda works under the guise of neutrality. I came away believing ethical visualization isn't a checklist — it's a commitment to transparency about the choices you've made and why."
   },
   {
     "title": "The Silent Segregation by Zoning in the GBA",
     "year": 2026,
-    "image": "images/housing-eda.png",
+    "image": "/images/housing-eda.png",
     "description": "An exploratory data analysis investigating how single-family zoning in the Greater Boston Area perpetuates racial and economic segregation, using housing zoning data, census demographics, and income distributions.",
     "story": "I went into this project knowing that housing segregation in America wasn't accidental, but I didn't fully grasp how zoning was the quiet instrument doing the work. Drawing from the Boston Fair Housing Center's research and Dain's 'Exclusionary by Design,' I explored how municipalities in the Greater Boston Area use single-family zoning to implicitly exclude families of color and low-income households. I found that seven municipalities are zoned 100% exclusively for single-family housing, and even in mixed-zoning municipalities, the majority of residential land is still reserved for single-family homes. The racial composition in exclusively single-family zones was staggering — between 71% and 98% White. Strikingly, nearly all of the exclusively single-family municipalities are designated MBTA communities supposedly required to zone for multifamily housing. The data told a clear story: while housing policies now use the language of diversity and inclusion, restrictive zoning remains structurally intact, and the communities who suffer most are Black, Latino, Asian, and low-income families."
   },
   {
     "title": "COVID-19 Spiral: Visualization Critique & Redesign",
     "year": 2026,
-    "image": "images/covid-redesign.jpg",
+    "image": "/images/covid-redesign.jpg",
     "description": "A critique and redesign of the New York Times' iconic COVID-19 spiral visualization, replacing the spiral with a color-coded area chart that reveals variant-specific surges and honest case magnitudes.",
     "story": "The NYT's COVID spiral is one of those visualizations that grabs you viscerally — you can feel the pandemic spiraling outward, wave after wave. But when I sat with it critically, I realized I couldn't actually read the numbers, couldn't tell which variant was driving which surge, and the '7-day average' label was confusingly placed. I went through multiple sketch iterations — a virus-shaped spiral with spike proteins, a simple line chart, and finally a color-coded area chart — before landing on a design that addressed my core critiques. The final visualization encodes the Original, Delta, and Omicron strains in distinct colors, annotates peak values at critical points, and uses a linear x-axis for honest comparison. The Omicron peak at 818,589 cases on a 7-day average dwarfs everything before it in a way the spiral only hinted at. But I lost something too: the spiral's intuitive communication of cyclicality and recurrence. This project taught me that every visualization form carries inherent tradeoffs, and the goal isn't perfection — it's choosing the tradeoffs that best serve your message."
   },
   {
     "title": "creAItivity Studio",
     "year": 2025,
-    "image": "images/creativity-studio.png",
+    "image": "/images/creativity-studio.png",
     "description": "An interactive game exploring artists' creativity and the systemic harms of generative AI on creators, played through five levels of art prompts and meaningful choices.",
     "story": "I wanted to create something that made people feel the tension artists face in the age of generative AI. The game puts you through five levels where you're asked to create art pieces for contests and exhibitions using a creative space for collaging and painting — but with the ever-present temptation of AI-generated images. Every choice you make shapes the narrative and outcome. Building it taught me that games can be incredibly effective vehicles for empathy, and that the conversation around AI and creativity is far more nuanced than most people realize."
   },
   {
     "title": "Neighborhood Soundscapes",
     "year": 2024,
-    "image": "images/soundscapes.jpg",
+    "image": "/images/soundscapes.jpg",
     "description": "A web-based audio map that lets users explore the ambient sounds of different neighborhoods, highlighting how sound shapes our sense of place.",
     "story": "I started recording sounds on my daily walks — birds near the river, traffic at the intersection, kids at the playground — and realized how much of a neighborhood's character lives in its soundscape. I built an interactive map where users can click on locations and hear layered audio recordings. The project made me think about accessibility, sensory experience, and how we design for more than just the visual. Sometimes the most important data isn't in a spreadsheet."
   },
   {
     "title": "Digital Zine Maker",
     "year": 2023,
-    "image": "images/zine-maker.jpg",
+    "image": "/images/zine-maker.jpg",
     "description": "A browser-based tool for creating and sharing digital zines, inspired by DIY print culture and the joy of lo-fi publishing.",
     "story": "I've always loved zines — their messiness, their honesty, their refusal to be polished. I wanted to bring that energy to the web. I built a drag-and-drop editor where you can layer text, images, stickers, and hand-drawn doodles to create zine pages, then share them as a link. The constraints were intentional: limited fonts, a small canvas, no auto-layout. I learned that sometimes the best design tool is one that gets out of your way and lets people be weird."
   },
   {
     "title": "Collective Memory Archive",
     "year": 2020,
-    "image": "images/memory-archive.png",
+    "image": "/images/memory-archive.png",
     "description": "A community-driven archive where people submit and explore personal memories tied to specific places, building a collective map of lived experience.",
     "story": "This started as a question: what would a map look like if it was drawn from memories instead of geography? I built a platform where users could pin a memory to a location — a first kiss at a bus stop, a protest in a park, a goodbye at an airport. The entries were anonymous and poetic. Watching the map fill up taught me that everyone carries invisible maps of their cities, and that sharing them creates a kind of intimacy between strangers."
   },
   {
     "title": "Accessible Recipe Converter",
     "year": 2019,
-    "image": "images/recipe-converter.jpg",
+    "image": "/images/recipe-converter.jpg",
     "description": "A tool that converts online recipes into clean, accessible formats with adjustable serving sizes, screen reader support, and step-by-step mode.",
     "story": "I got tired of recipe websites buried under ads, pop-ups, and life stories before you even get to the ingredients. So I built a converter that strips a recipe URL down to its essentials: ingredients, steps, and timing. I added serving size adjustment, a step-by-step cooking mode, and full screen reader compatibility. It was a lesson in accessibility as a design philosophy — not an afterthought, but the starting point. Good design should feed everyone."
   },
   {
     "title": "Empathy Engine",
     "year": 2022,
-    "image": "images/empathy-engine.png",
+    "image": "/images/empathy-engine.png",
     "description": "A speculative design project imagining a machine that quantifies empathy, and the ethical dilemmas that would follow.",
     "story": "What if empathy could be measured like a credit score? I created a fictional product — the Empathy Engine — complete with branding, a promotional website, user testimonials, and a critical design essay unpacking why it would be a terrible idea. The project was equal parts satire and warning. It pushed me to think about how technology often promises connection while reducing human experience to metrics. Sometimes the best way to critique the future is to build it and let people recoil."
   }
