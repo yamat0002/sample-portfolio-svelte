@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   import Scrolly from "svelte-scrolly";
   import projects from "$lib/projects.json";
 
@@ -29,7 +30,7 @@
       <div class="project-detail">
         <h3>{sorted_projects[activeProjectIdx].year}</h3>
         <img
-          src={sorted_projects[activeProjectIdx].image}
+          src="{base}{sorted_projects[activeProjectIdx].image}"
           alt={sorted_projects[activeProjectIdx].title}
           width="100%"
         />
