@@ -1,15 +1,16 @@
 <script>
+import { base } from "$app/paths";
 export let data = {};
 </script>
 
 <article>
   <h2>{data.title}</h2>
-  <img src={data.image} alt="" />
-  <p>{data.description}</p>
+  <img src="{base}{data.image}" alt="" />
+  <p><strong>{data.year} |</strong> {data.description}</p>
 </article>
 
 <style>
-  article {
+  article { 
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 3;
