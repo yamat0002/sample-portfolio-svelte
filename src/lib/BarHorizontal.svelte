@@ -2,10 +2,11 @@
   import * as d3 from "d3";
 
   export let data = [];
+  export let title = "";
 
-  let width = 500;
-  let height = 300;
-  let margin = { top: 40, right: 150, bottom: 50, left: 100 };
+  let width = 600;
+  let height = 180;
+  let margin = { top: 5, right: 100, bottom: 35, left: 70 };
   let innerWidth = width - margin.left - margin.right;
   let innerHeight = height - margin.top - margin.bottom;
 
@@ -29,21 +30,19 @@
   $: maxBar = d3.greatest(data, (d) => d.value);
 
   $: if (xAxis && yAxis) {
-    d3.select(xAxis).call(d3.axisBottom(xScale));
+    let maxVal = d3.max(data, (d) => d.value) || 1;
+    d3.select(xAxis).call(
+      d3.axisBottom(xScale)
+        .ticks(Math.min(maxVal, 10))
+        .tickFormat(d => Number.isInteger(d) ? d : "")
+    );
     d3.select(yAxis).call(d3.axisLeft(yScale));
   }
 </script>
 
+<h3 class="chart-title">{title}</h3>
 <div class="container">
   <svg viewBox="0 0 {width} {height}">
-    <text
-      x={margin.left + innerWidth / 2}
-      y={margin.top / 2}
-      text-anchor="middle"
-      class="chart-title"
-    >
-      Lines of Code per Language
-    </text>
     <g transform="translate({margin.left}, {margin.top})">
       {#each data as d}
         <rect
@@ -65,18 +64,11 @@
           stroke="currentColor"
           stroke-width="2"
         />
-        <line
-          x1={xScale(maxBar.value) / 2}
-          y1={yScale(maxBar.label)}
-          x2={xScale(maxBar.value) / 2}
-          y2={yScale(maxBar.label) - 20}
-          stroke="currentColor"
-          stroke-width="1"
-        />
         <text
-          x={xScale(maxBar.value) / 2}
-          y={yScale(maxBar.label) - 25}
-          text-anchor="middle"
+          x={xScale(maxBar.value) + 5}
+          y={yScale(maxBar.label) + yScale.bandwidth() / 2}
+          dominant-baseline="middle"
+          text-anchor="start"
           class="annotation"
         >
           Most lines of code
@@ -89,16 +81,16 @@
         text-anchor="middle"
         class="axis-label"
       >
-        Lines of Code
+        Number of Lines
       </text>
       <text
         x={-(innerHeight / 2)}
-        y={-margin.left + 50}
+        y={-margin.left + 20}
         text-anchor="middle"
         transform="rotate(-90)"
         class="axis-label"
       >
-        Language
+        Programming Language
       </text>
     </g>
     <g
@@ -122,47 +114,53 @@
     max-width: 100%;
     height: auto;
     overflow: visible;
+    flex: 3;
   }
 
   .container {
     display: flex;
+    align-items: start;
+    gap: 1em;
   }
 
   .legend {
-    flex: 1;
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: 0.75em;
+    flex: 1;
+    min-width: 8em;
   }
 
   .legend li {
     display: flex;
     align-items: center;
     gap: 0.3em;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.3em;
   }
 
   .swatch {
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     background-color: var(--color);
+    flex-shrink: 0;
   }
 
   .chart-title {
-    font-size: 1em;
-    font-weight: bold;
-    fill: currentColor;
+    font-size: 0.95em;
+    text-align: center;
+    margin: 0.3em 0 0.1em;
   }
 
   .axis-label {
-    font-size: 0.8em;
+    font-size: 0.6em;
     fill: currentColor;
   }
 
   .annotation {
-    font-size: 0.7em;
-    fill: black;
+    font-size: 0.5em;
+    fill: currentColor;
     font-style: italic;
   }
 </style>
