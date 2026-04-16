@@ -45,18 +45,29 @@
 <div class="projects">
   {#each projects as p}
     <Project data={p} />
+    {#if p.url}
+      <a class="project-link" href={p.url} target="_blank">View Live Project →</a>
+    {/if}
   {/each}
 </div>
 
 <p class="outro">Thanks for scrolling through my project story!!!</p>
-<!-- <section>
-    <h2>Data wrangling result</h2>
-    <pre>{JSON.stringify(wrangled, null, 2)}</pre>
-</section> -->
 
 
 <style>
   .outro {
     margin-bottom: 2rem;
   }
-</style>
+
+  .project-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: #2d6a4f;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .project-link:hover {
+    text-decoration: underline;
+  }
+</style> 

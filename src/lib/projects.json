@@ -21,6 +21,14 @@
     "story": "The NYT's COVID spiral is one of those visualizations that grabs you viscerally — you can feel the pandemic spiraling outward, wave after wave. But when I sat with it critically, I realized I couldn't actually read the numbers, couldn't tell which variant was driving which surge, and the '7-day average' label was confusingly placed. I went through multiple sketch iterations — a virus-shaped spiral with spike proteins, a simple line chart, and finally a color-coded area chart — before landing on a design that addressed my core critiques. The final visualization encodes the Original, Delta, and Omicron strains in distinct colors, annotates peak values at critical points, and uses a linear x-axis for honest comparison. The Omicron peak at 818,589 cases on a 7-day average dwarfs everything before it in a way the spiral only hinted at. But I lost something too: the spiral's intuitive communication of cyclicality and recurrence. This project taught me that every visualization form carries inherent tradeoffs, and the goal isn't perfection — it's choosing the tradeoffs that best serve your message."
   },
   {
+    "title": "BikeWatch",
+    "year": 2026,
+    "url": "https://map-project-svelte.vercel.app/",
+    "image": "/images/bikewatch.png",
+    "description": "An interactive map visualization of bike traffic in the Boston area, featuring time-based filtering, traffic flow coloring, and cycling isochrones.",
+    "story": "An interactive map visualization of bike traffic in the Boston area."
+  },
+  {
     "title": "creAItivity Studio",
     "year": 2025,
     "image": "/images/creativity-studio.png",
