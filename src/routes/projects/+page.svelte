@@ -44,9 +44,12 @@
 
 <div class="projects">
   {#each projects as p}
-    <Project data={p} />
     {#if p.url}
-      <a class="project-link" href={p.url} target="_blank">View Live Project →</a>
+      <a href={p.url} target="_blank" class="project-link">
+        <Project data={p} />
+      </a>
+    {:else}
+      <Project data={p} />
     {/if}
   {/each}
 </div>
@@ -59,15 +62,9 @@
     margin-bottom: 2rem;
   }
 
-  .project-link {
-    display: inline-block;
-    margin-bottom: 1.5rem;
-    color: #2d6a4f;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  .project-link:hover {
-    text-decoration: underline;
-  }
-</style> 
+ .project-link {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}
+</style>
